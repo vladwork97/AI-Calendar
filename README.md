@@ -9,7 +9,7 @@ The app allows users to **view events**, **create new ones via prompts**, and **
 
 ## 🌐 Live Demo
 
-🔗 [GitHub Pages Deployment](https://vladwork97.github.io/ai-calendar-ui/)
+🔗 [GitHub Pages Deployment](https://vladwork97.github.io/AI-Calendar/)
 
 
 ## 🧩 Features
@@ -27,7 +27,7 @@ The app allows users to **view events**, **create new ones via prompts**, and **
 - **Vite**
 - **TailwindCSS**
 - **FullCalendar**
-- Backend API: [.NET 10 WebAPI on Render](https://aicalendar-gqcp.onrender.com)
+- Backend API: [.NET 8 WebAPI on Render](https://aicalendar-gqcp.onrender.com)
 
 
 ## ⚙️ Getting Started Locally
@@ -35,8 +35,8 @@ The app allows users to **view events**, **create new ones via prompts**, and **
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/OlesiaKubska/ai-calendar-ui.git
-cd ai-calendar-ui
+git clone https://github.com/vladwork97/AI-Calendar.git
+cd AI-Calendar
 ```
 
 ### 2. Install dependencies
