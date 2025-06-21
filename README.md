@@ -27,7 +27,7 @@ The app allows users to **view events**, **create new ones via prompts**, and **
 - **Vite**
 - **TailwindCSS**
 - **FullCalendar**
-- Backend API: [.NET 8 WebAPI on Render](https://aicalendar-gqcp.onrender.com)
+- Backend API: [.NET 9 WebAPI on Render](https://aicalendar-gqcp.onrender.com)
 
 
 ## ⚙️ Getting Started Locally
