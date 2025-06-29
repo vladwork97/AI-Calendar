@@ -54,8 +54,10 @@ const PromptExecutor = ({ onDone }: PromptExecutorProps) => {
       </div>
       <label className="block mb-2 font-medium text-gray-700">
           Allowed commands:
-          - cancel all events with title 'EVENT TITLE HERE'
-          - add meeting with Nick on Friday from 14:00 to 15:30
+          <ul>
+            <li>cancel all events with title 'EVENT TITLE HERE'</li>
+            <li>add meeting with Nick on Friday from 14:00 to 15:30</li>
+          </ul>
      </label>
       {response && <p className="mt-3 text-green-700">{response}</p>}
     </div>
