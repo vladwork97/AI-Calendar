@@ -7,9 +7,12 @@ interface PromptExecutorProps {
 const PromptExecutor = ({ onDone }: PromptExecutorProps) => {
   const [prompt, setPrompt] = useState("");
   const [response, setResponse] = useState("");
+  const [loading, setLoading] = useState(false);
 
   const handleSubmit = async () => {
     if (!prompt.trim()) return;
+
+    setLoading(true);
 
     try {
       const res = await fetch(
@@ -30,6 +33,8 @@ const PromptExecutor = ({ onDone }: PromptExecutorProps) => {
       setResponse("Failed to process prompt.");
       console.error(err);
     }
+
+    setLoading(false);
   };
 
   return (
@@ -47,6 +52,7 @@ const PromptExecutor = ({ onDone }: PromptExecutorProps) => {
         />
         <button
           onClick={handleSubmit}
+          disabled={loading}
           className="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700"
         >
           Send
