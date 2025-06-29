@@ -45,11 +45,6 @@ const PromptExecutor = ({ onDone }: PromptExecutorProps) => {
           className="flex-1 p-2 border rounded"
           placeholder="e.g. Cancel all events with title 'Coffee break'"
         />
-        <label>
-          Allowed commands:
-          - cancel all events with title 'EVENT TITLE HERE'
-          - add meeting with Nick on Friday from 14:00 to 15:30
-        </label>
         <button
           onClick={handleSubmit}
           className="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700"
@@ -57,6 +52,11 @@ const PromptExecutor = ({ onDone }: PromptExecutorProps) => {
           Send
         </button>
       </div>
+      <label className="block mb-2 font-medium text-gray-700">
+          Allowed commands:
+          - cancel all events with title 'EVENT TITLE HERE'
+          - add meeting with Nick on Friday from 14:00 to 15:30
+     </label>
       {response && <p className="mt-3 text-green-700">{response}</p>}
     </div>
   );
