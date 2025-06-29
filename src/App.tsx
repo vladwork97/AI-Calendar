@@ -5,7 +5,7 @@ import CalendarView from "./components/CalendarView";
 import PromptExecutor from "./components/PromptExecutor";
 import type { CalendarEvent } from "../src/types/CalendarEvent";
 
-const VITE_API_URL = "https://aicalendar-gqcp.onrender.com";
+const VITE_API_URL = "https://aicalendarbackend.onrender.com";
 
 const App = () => {
   const [events, setEvents] = useState<CalendarEvent[]>([]);
