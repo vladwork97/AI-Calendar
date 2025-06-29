@@ -13,7 +13,7 @@ const PromptExecutor = ({ onDone }: PromptExecutorProps) => {
 
     try {
       const res = await fetch(
-        "https://aicalendar-gqcp.onrender.com/api/v1/events/prompt",
+        "https://aicalendarbackend.onrender.com/api/v1/events/prompt",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -45,6 +45,11 @@ const PromptExecutor = ({ onDone }: PromptExecutorProps) => {
           className="flex-1 p-2 border rounded"
           placeholder="e.g. Cancel all events with title 'Coffee break'"
         />
+        <label>
+          Allowed commands:
+          - cancel all events with title 'EVENT TITLE HERE'
+          - add meeting with Nick on Friday from 14:00 to 15:30
+        </label>
         <button
           onClick={handleSubmit}
           className="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700"

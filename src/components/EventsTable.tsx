@@ -22,7 +22,7 @@ const EventsTable: React.FC = () => {
 
       try {
         const res = await fetch(
-          "https://aicalendar-gqcp.onrender.com/api/v1/events/next-week"
+          "https://aicalendarbackend.onrender.com/api/v1/events/next-week"
         );
         if (!res.ok) throw new Error("Failed to fetch events");
         const data = await res.json();
